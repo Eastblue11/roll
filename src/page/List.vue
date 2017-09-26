@@ -1,17 +1,10 @@
 <template>
-    <div id="day">
-        <header>
-            <div class="app">
-                <a href="#"><img src="https://jp.juancdn.com/jpwebapp/images/go_load_new.png?20161115"></a>
-            </div>
-            <div class="search">
-                <div class="bar">
-                    <a href="#"><span></span>搜索商品</a>
-                </div>
-            </div>
-        </header>
-        <div class="nav">
-            <router-link to="/list">上新</router-link>
+    <div id="list">
+      <header>
+        <img src="https://jp.juancdn.com/jpwebapp_v1/images_v1/head/top-logo.png?ts=390cfa98cd666aa7_1506077635-1&sv=a8351a1e">
+      </header>
+      <div class="nav">
+            <router-link to="/day">上新</router-link>
             <router-link to="/list">女装</router-link>
             <router-link to="/list">鞋包</router-link>
             <router-link to="/list">母婴</router-link>
@@ -23,37 +16,18 @@
             <router-link to="/list">精品配饰</router-link>
             <router-view></router-view>
         </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#"><img src="https://goods8.juancdn.com/jas/170924/f/4/59c721b1a9fcf86c6f65ad6a_1080x418.png?imageMogr2/thumbnail/750x290!/quality/80!/format/png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="https://goods4.juancdn.com/jas/170920/7/1/59c1c0baa9fcf83c4773cd61_1080x418.png?imageMogr2/thumbnail/750x290!/quality/80!/format/png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="https://goods4.juancdn.com/jas/170924/7/a/59c723428150a1259424d576_1080x418.jpg?imageMogr2/thumbnail/750x290!/quality/80!/format/jpg"></a></div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination" style="font-size:0;"></div>
-        </div>
-        <div class="greyline"></div>
-        <ul id="nav">
-            <li><a href="#"><img src="https://goods8.juancdn.com/jas/170828/e/7/59a3f55e8150a1637e478d48_270x267.png?imageMogr2/quality/85!/format/png"></a></li>
-            <li><a href="#"><img src="https://goods8.juancdn.com/jas/170809/e/8/598a7504a9fcf866ab51bcfe_270x267.png?imageMogr2/quality/85!/format/png"></a></li>
-            <li><a href="#"><img src="https://goods4.juancdn.com/jas/170828/7/1/59a3f5768150a16da3399c8f_270x267.png?imageMogr2/quality/85!/format/png"></a></li>
-            <li><a href="#"><img src="https://goods1.juancdn.com/jas/170906/1/c/59af976b8150a15198156939_270x267.png?iopcmd=convert&Q=85&dst=webp"></a></li>
-        </ul>
-        <div class="greyline"></div>
-        <div id="hot">
-            <div class="hotbig"><a href="#"><img src="https://goods8.juancdn.com/jas/170922/e/2/59c4f6eb8150a159642acf6c_540x656.png?imageMogr2/quality/85!/format/png"></a></div>
-            <div class="hotsmall"><a href="#"><img src="https://goods8.juancdn.com/jas/170922/e/e/59c4f47fa9fcf854472724c2_540x328.png?imageMogr2/quality/85!/format/png"></a></div>
-            <div class="hotsmall"><a href="#"><img src="https://goods1.juancdn.com/jas/170925/0/2/59c86299a9fcf82f0a749c74_540x328.png?iopcmd=convert&Q=85&dst=webp"></a></div>
-        </div>
-        <div class="greyline"></div>
-        <div class="sport">
-            <a href="#"><img src="https://goods6.juancdn.com/jas/170920/a/c/59c256a68150a10f1f02c1e1_270x360.png?imageMogr2/quality/85!/format/png"></a>
-            <a href="#"><img src="https://goods3.juancdn.com/jas/170920/5/5/59c256e18150a10e787b2434_270x360.png?iopcmd=convert&Q=85&dst=webp"></a>
-            <a href="#"><img src="https://s2.juancdn.com/jas/170920/0/3/59c256fb8150a10ee71f22cf_270x360.gif"></a>
-            <a href="#"><img src="https://goods7.juancdn.com/jas/170920/c/9/59c25736a9fcf8b19540fccc_270x360.png?iopcmd=convert&Q=85&dst=webp"></a>
-        </div>
-        <div class="greyline"></div>
-        <div class="everyday">
+      <ul id="nav">
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>    
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>
+        <li><a href="#"><img src="https://goods5.juancdn.com/jas/170818/9/b/599636d9a9fcf8ab177f7cec_200x212.png?iopcmd=convert&Q=85&dst=webp"></a></li>        
+      </ul>
+      <div class="greyline"></div>
+      <div class="everyday">
             <img src="https://goods1.juancdn.com/bao/170310/0/f/58c20db7a43d1f63427015d8_750x96.jpg?iopcmd=convert&Q=85&dst=webp">
         </div>
         <ul id="main">
@@ -120,64 +94,27 @@ export default {
   name: "component_name",
   data () {
     return {
-       
-    }
+        msg:'购物车'
+    };
   }
 }
 </script>
     
 <style lang="css" scoped>
     header{
-        width: 100%;
+      width: 100%;
+      height: 0.44rem;
+      font-size: 0;
+      position: relative;
+      border-bottom: 1px solid #f2f2f3;
     }
-    header .app{
-        width: 100%;
-        height: 0.5625rem;
-        font-size: 0;
-    }
-    header .app a{
-        display: inline-block;
-        width: 100%;
-    }
-    header .app img{
-        width: 100%;
-    }
-    header .search{
-        width: 100%;
-        height: 0.44rem;
-    }
-    .search .bar{
-        padding-left: 0.14rem;
-        padding-right: 0.44rem;
-        width: 100%;
-        height: 100%;
-        font-size: 0;
-    }
-    .search .bar a{
-        width: 100%;
-        height: 0.28rem;
-        background-color: #f2f2f2;
-        display: inline-block;
-        margin-top: 0.1rem;
-        border-radius: 0.02rem;
-        font-size: 0.12rem;
-        text-decoration: none;
-        color: #999999;
-        line-height: 0.28rem;
-        text-align: left;
-        padding-left: 0.31rem;
-        position: relative;
-    }
-    .bar a span{
-        width: 0.15rem;
-        height: 0.15rem;
-        display: inline-block;
-        position: absolute;
-        font-family: iconfont!important;
-        top: 0.07rem;
-        left: 0.08rem;
-        content: "\e62b";
-        font-size: 0.15rem;
+    header img{
+      width: 0.48rem;
+      height: 0.24rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     }
     .nav{
         width: 100%;
@@ -198,83 +135,28 @@ export default {
         margin: 0 0.07rem;
         padding: 0 0.05rem;
     }
-    
-    .swiper-container img{
-        width: 100%;
+    #nav{
+      width: 100%;
+      height: 1.9875rem;
+      list-style: none;
     }
-    .swiper-wrapper{
-        font-size: 0;
+    #nav li{
+      width: 25%;
+      height: 50%;
+      float: left;
+    }
+    #nav a{
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+    }
+    #nav img{
+      width: 100%;
     }
     .greyline{
         width: 100%;
         height: 0.1rem;
         background-color: #f4f4f8;
-    }
-    #nav{
-        width: 100%;
-        height: 0.925rem;
-        list-style: none;
-    }
-    #nav li{
-        width: 25%;
-        height: 0.925rem;
-        float: left;
-    }
-    #nav li a{
-        width: 100%;
-        height: 0.925rem;
-        display: inline-block;
-        text-decoration: none;
-    }
-    #nav img{
-        width: 100%;
-    }
-    #hot{
-        width: 100%;
-        height: 2.27775rem;
-        font-size: 0;
-    }
-    .hotbig{
-        width: 50%;
-        height: 100%;
-        float: left;
-        border-right: 1px solid #ebebeb;
-    }
-    .hotbig a{
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-    .hotbig img{
-        width: 100%;
-    }
-    .hotsmall{
-        width: 50%;
-        height: 50%;
-        float: left;
-        border-bottom: 1px solid #ebebeb;
-    }
-    .hotsmall a{
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-    .hotsmall img{
-        width: 100%;
-        height: 100%;
-    }
-    .sport{
-        width: 100%;
-        height: 1.25rem;
-        font-size: 0;
-    }
-    .sport a{
-        display: inline-block;
-        width: 25%;
-        height: 1.25rem;
-    }
-    .sport img{
-        width: 100%;
     }
     .everyday{
         width: 100%;
@@ -324,21 +206,18 @@ export default {
         padding: 0.08rem 0.08rem;
         font-size: 0;
         position: relative;
-        background-color: white;
     }
     .main2 h1{
         font-size: 0.13rem;
         color: #ff464e;
         text-align: left;
         line-height: 0.2rem;
-        font-weight: normal;
     }
     .main2 h2{
         color: #333;
         font-size: 0.12rem;
         text-align: left;
         line-height: 0.2rem;
-        font-weight: normal;
     }
     .main2 span{
         font-size: 0.11rem;
@@ -361,8 +240,4 @@ export default {
         clear: both;
         visibility: hidden;
     }
-    ::-webkit-scrollbar {
-    width: 0px;
-    height: 1px;
-}
 </style>

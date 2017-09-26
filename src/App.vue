@@ -2,12 +2,12 @@
   <div id="app">
 
      <div>
-         <ul class="tabbar">
-          <li><router-link to='/day'>今日推荐</router-link></li>
-          <li><router-link to='/roll'>卷皮精选</router-link></li>
-          <li><router-link to='/vip'>vip专享</router-link></li>
-          <li><router-link to='/car'>购物车</router-link></li>
-          <li><router-link to='/mine'>我的</router-link></li>
+      <ul class="tabbar">
+        <li><router-link to='/day'>今日推荐</router-link></li>
+        <li><router-link to='/roll'>卷皮精选</router-link></li>
+        <li><router-link to='/vip'>vip专享</router-link></li>
+        <li><router-link to='/car'>购物车</router-link></li>
+        <li><router-link to='/mine'>我的</router-link></li>
       </ul>
        <router-view></router-view>
 
@@ -20,10 +20,9 @@
 <script>
 
 export default {
- 
-  }
-   
+  name: 'app'
 
+}
 </script>
 
 <style scoped>
@@ -37,7 +36,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 0.6rem;
 }
 
 #app ul{
@@ -47,8 +45,10 @@ export default {
   right: 0;
   bottom: 0;
   height: 0.5rem;
-  background-color: gray;
+  background-color: white;
   line-height: 0.5rem;
+  z-index: 99;
+  border-top: 1px solid #fafafa;
 }
 #app ul li{
   float: left;
@@ -58,6 +58,7 @@ export default {
 }
 a{
   text-decoration: none;
+  color: #666;
 }
 
 </style>

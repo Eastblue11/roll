@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <title>roll</title>
-
+    <script src="static/swiper-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="static/swiper-3.3.1.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    
 </head>
-
 <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
@@ -24,4 +31,12 @@
             newFont = window.innerWidth / 375 * 100;
         }
     }
+    var mySwiper = new Swiper('.swiper-container', {
+		autoplay: 2000,//可选选项，自动滑动
+		loop : true,
+		//手动操作后，自动继续播放
+		autoplayDisableOnInteraction : false,
+		//分页器
+		pagination : '.swiper-pagination'
+	})
 </script>

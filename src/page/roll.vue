@@ -1,38 +1,23 @@
 <template>
     <div id="roll">
-      
-
-      <Ttopbar></Ttopbar>
-
-
-
-
-
+      <h1>{{msg}}</h1>
    </div>
 </template>
     
 <script>
-import Ttopbar from '../components/Ttopbar'
 export default {
   name: "component_name",
   data () {
     return {
-       
+        msg:'卷皮精选'
     };
-  },
-  components:{
-    Ttopbar
-  },
-  methods:{
-
   }
 }
 </script>
     
 <style lang="css" scoped>
-*{
-  padding: 0;
-  margin: 0;
-}
-    
+     #roll h1{
+        color: red;
+        font-size: 0.2rem;
+    }
 </style>

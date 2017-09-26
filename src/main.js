@@ -3,27 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 
-
-//引入http请求函数
-// import axios from 'axios'
-// Vue.use(axios)
-// Vue.prototype.$http = anxios
-
-
 //导入路由
 import vueRouter from 'vue-router'
 Vue.use(vueRouter)
 
-//卷皮精选两个路由
-import shop from './page/rollShop'
-import life from './page/rollLife'
-
 //引入四个主页
-import Day from './page/Day';
+import Day from './page/Day.vue';
 import Roll from './page/roll'
 import Vip from './page/vip'
 import Car from './page/Car'
 import Mine from './page/Mine'
+import List from './page/List'
 
 Vue.config.productionTip = false
 
@@ -39,12 +29,7 @@ var routes = [{
     },
     {
         path: '/roll',
-        component: Roll,
-        children: [
-            { path: '', component: shop },
-            { path: '/shop', component: shop },
-            { path: '/life', component: life }
-        ]
+        component: Roll
     },
     {
         path: '/vip',
@@ -57,6 +42,10 @@ var routes = [{
     {
         path: '/mine',
         component: Mine
+    },
+    {
+        path: '/list',
+        component: List
     }
 ];
 
