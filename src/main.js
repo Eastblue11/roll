@@ -25,6 +25,9 @@ import Vip from './page/vip'
 import Car from './page/Car'
 import Mine from './page/Mine'
 
+// 注册页面的引入
+import sigin from './page/sigin'
+import login from './page/login'
 Vue.config.productionTip = false
 
 
@@ -57,6 +60,14 @@ var routes = [{
     {
         path: '/mine',
         component: Mine
+    },
+    {
+        path: '/login',
+        component: login
+    },
+    {
+        path: '/mine',
+        component: Mine,
     }
 ];
 

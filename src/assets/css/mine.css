@@ -1,0 +1,15 @@
+#mine .uesrBox{
+    width: 100%;
+}
+#mine .userBox .order{
+    font-size: .15rem;
+    line-height: .48rem;
+    height: .48rem;
+    display: block;
+    position: relative;
+    padding: 0 .14rem 0 .18rem;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    overflow: hidden;
+}
