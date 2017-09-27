@@ -5,9 +5,9 @@ import App from './App'
 
 
 //引入http请求函数
-// import axios from 'axios'
-// Vue.use(axios)
-// Vue.prototype.$http = anxios
+import vueResource from 'vue-resource'
+Vue.use(vueResource)
+
 
 
 //导入路由
@@ -28,6 +28,9 @@ import Mine from './page/Mine'
 // 注册页面的引入
 import sigin from './page/sigin'
 import login from './page/login'
+
+// 错误路由提示
+import NotFound from './page/notfound'
 Vue.config.productionTip = false
 
 
@@ -66,12 +69,17 @@ var routes = [{
         component: login
     },
     {
-        path: '/mine',
-        component: Mine,
-    }
+        path: '/sigin',
+        component: sigin,
+    },
+    {
+         path: '*',
+     component: NotFound
+     }
 ];
 
 const router = new vueRouter({
+    mode: 'history',
     routes
 })
 

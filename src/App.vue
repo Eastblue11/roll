@@ -46,9 +46,11 @@ export default {
   right: 0;
   bottom: 0;
   height: 0.5rem;
-  background-color: gray;
+  background-color:#fff;
   line-height: 0.5rem;
   z-index:999;
+  border-top:1px solid #ebebeb;
+  list-style: none;
 }
 #app ul li{
   float: left;

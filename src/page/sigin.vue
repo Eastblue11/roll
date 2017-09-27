@@ -42,7 +42,12 @@ export default {
 </script>
     
 <style lang="css" scoped>
-
+  ul,li{
+    list-style-type:none;
+  }
+  input{
+    outline-style: none;
+  }
   #sigin{
     width: 100%;
     color: #666;

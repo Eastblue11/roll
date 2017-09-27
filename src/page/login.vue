@@ -17,10 +17,10 @@
           </div>
         <div class="wap-login">
         <ul id="login-switch" class="login-txt">
-          <li class="active">卷皮账号登录</li>
-           <li class="active">手机快速登录</li>
+          <li :class="{'active': colorShow}" @click="showFn">卷皮账号登录</li>
+           <li @click="showFn" :class="{'active': !colorShow}">手机快速登录</li>
         </ul>
-        <form id="normal-logo" actrion="" method="post" class="login">
+        <form id="normal-logo" actrion="" method="post" class="login" v-show="divShow">
           <div class="login-info">
               <ul class="info-input clear">
                 <li class="clear">
@@ -33,7 +33,7 @@
               <a hrf="#" class="btn-code">登录</a>
             </div>
         </form>
-          <form id="qick-login" method="post" action="">
+          <form id="qick-login" method="post" action="" v-show="!divShow">
             <div class="login-info">
               <ul class="info-input clear">
                 <li class="clear">
@@ -45,6 +45,7 @@
                 </li>
               </ul>
               <a hrf="#" class="btn-code">登录</a>
+              <div class="quick"></div>
             </div>
           </form>
       </div>
@@ -56,12 +57,26 @@ export default {
   name: "component_name",
   data () {
     return {
+      colorShow: true,
+      divShow: true
     };
+  },
+  methods:{
+    showFn(){
+      this.colorShow = ! this.colorShow;
+      this.divShow= ! this.divShow;
+    }
   }
 }
 </script>
     
 <style lang="css" scoped>
+ul,li{
+  list-style: none;
+}
+input{
+  outline: none;
+}
 .app{
   font-size: .14rem;
   padding-bottom: .557rem;
@@ -134,7 +149,6 @@ export default {
      }
    .wap-login #login-switch{
        line-height: .44rem;
-       margin-top:.28rem;
        font-size: .14rem;
        margin-bottom: 20px;
        color: #999;
@@ -143,9 +157,23 @@ export default {
      #login-switch li{
        width: 50%;
        float: left;
+       box-sizing:border-box;
+       height: 100%;
+       border-bottom: none;
+       position: relative;
      }
       #login-switch .active{
         color: #ff464e;
+      }
+      #login-switch .active:after{
+        content: "";
+        height:.02rem;
+        bottom: 0;
+        left: 0.3rem;
+        right: .3rem;
+        background: #ff464e;
+        position: absolute;
+
       }
     .wap-login .clear{
         clear:both;
@@ -160,7 +188,7 @@ export default {
       }
      .wap-login ul li input{
         height: .48rem;
-        font-size: .12rem;
+        font-size: .13rem;
         border:0;
         width: 100%;
         box-sizing: border-box;
