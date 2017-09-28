@@ -3,88 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 
+//导入路由配置模块
+import router from './router'
 
 //引入http请求函数
 import vueResource from 'vue-resource'
 Vue.use(vueResource)
 
-
-
-//导入路由
-import vueRouter from 'vue-router'
-Vue.use(vueRouter)
-
-//卷皮精选两个路由
-import shop from './page/rollShop'
-import life from './page/rollLife'
-
-//引入四个主页
-import Day from './page/Day';
-import Roll from './page/roll'
-import Vip from './page/vip'
-import Car from './page/Car'
-import Mine from './page/Mine'
-
-// 注册页面的引入
-import sigin from './page/sigin'
-import login from './page/login'
-
-// 错误路由提示
-import NotFound from './page/notfound'
+// vue控制台警告
 Vue.config.productionTip = false
-
-
-//配置路由
-var routes = [{
-        path: '',
-        component: Day
-    },
-    {
-        path: '/day',
-        component: Day
-    },
-    {
-        path: '/roll',
-        component: Roll,
-        children: [
-            { path: '', component: shop },
-            { path: '/shop', component: shop },
-            { path: '/life', component: life }
-        ]
-    },
-    {
-        path: '/vip',
-        component: Vip
-    },
-    {
-        path: '/car',
-        component: Car
-    },
-    {
-        path: '/mine',
-        component: Mine
-    },
-    {
-        path: '/login',
-        component: login
-    },
-    {
-        path: '/sigin',
-        component: sigin,
-    },
-    {
-         path: '*',
-     component: NotFound
-     }
-];
-
-const router = new vueRouter({
-    mode: 'history',
-    routes
-})
-
-
-
 
 /* eslint-disable no-new */
 new Vue({

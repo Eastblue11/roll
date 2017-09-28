@@ -4,26 +4,44 @@
             <div class="fixtop">
                 <span id="t-index">全球购</span>
                 <span id="user">
-                    <a href="#" class="btn">
+                    <router-link to="classifi" class="btn">
                         <span class="icont"></span>
-                    </a>
+                    </router-link>
                 </span>
             </div>
         </div>
+         <router-view></router-view>
         <div id="banner">
             <div class="goods" id="goods">
-                <ul class="goods-list clear" id="goods_block" >
-                    <li class="brand-home-group" >
+                <ul class="goods-list clear" id="goods_block" v-for="(datas,index) in dataList" :key="datas.id"  >
+                    <li class="brand-home-group"  v-for="(item,index) in datas" :key="item.id"  v-show="item.shop_cover?true:false">
                         <a href="#" class="banner">
                             <div class="top-jiaobiao">
-                                满99元<br>
-                                减10元
+                                低至<br>{{ item.good_rate }}起
                             </div>
-                            <img src="https://goods3.juancdn.com/seller/170907/5/5/59b0c6678150a16ab172c319_750x350.jpg?iopcmd=convert&Q=88&dst=jpg"/>
+                            <img  v-bind:src="item.shop_cover"/>
                         </a>
-                        <div class="yinliu-box">
+                        <div class="yinliu-box" >
                             <div class="yinliu-list">
-                                <div class="yinliu-good">
+                                <div class="yinliu-good"  v-for="(pro,index) in item.shop_goods" :key="pro.id">
+                                    <a :href="pro.target_url" class="good-pic">
+                                        <img v-bind:src="pro.pic_url" alt="pro.title" />
+                                    </a>
+                                    <a href="#" class="good-detail">
+                                        <div class="good-price">
+                                            <span class="price-new">￥{{ pro.cprice}}</span>
+                                            <span class="price-del">￥{{ pro.oprice}}</span>
+                                        </div>
+                                        <div class="good-name">{{pro.title}}</div>
+                                    </a>
+                                </div>
+                                <div class="yinliu-good good-more">
+                                    <a href="#" class="good-pic">
+                                        <img src="https://jp.juancdn.com/jpwebapp_v1/images_v1/icon/this_global_more.png?20160825" alt="更多"/>
+                                    </a>
+                                    </a>
+                                </div>
+                                <!-- <div class="yinliu-good">
                                     <a href="#" class="good-pic">
                                         <img src="https://goods4.juancdn.com/bao/170724/7/f/59757b67a9fcf85d3e1a1056_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt="美迪惠尔针剂补水套装"/>
                                     </a>
@@ -34,8 +52,8 @@
                                         </div>
                                         <div class="good-name">美迪惠尔针剂补水套装</div>
                                     </a>
-                                </div>
-                                <div class="yinliu-good">
+                                </div> -->
+                                <!-- <div class="yinliu-good">
                                     <a href="#" class="good-pic">
                                         <img src="https://goods4.juancdn.com/bao/170724/7/f/59757b67a9fcf85d3e1a1056_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt="美迪惠尔针剂补水套装"/>
                                     </a>
@@ -46,8 +64,8 @@
                                         </div>
                                         <div class="good-name">美迪惠尔针剂补水套装</div>
                                     </a>
-                                </div>
-                                <div class="yinliu-good">
+                                </div> -->
+                                <!-- <div class="yinliu-good">
                                     <a href="#" class="good-pic">
                                         <img src="https://goods4.juancdn.com/bao/170724/7/f/59757b67a9fcf85d3e1a1056_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt="美迪惠尔针剂补水套装"/>
                                     </a>
@@ -58,8 +76,8 @@
                                         </div>
                                         <div class="good-name">美迪惠尔针剂补水套装</div>
                                     </a>
-                                </div>
-                                <div class="yinliu-good">
+                                </div> -->
+                                <!-- <div class="yinliu-good">
                                     <a href="#" class="good-pic">
                                         <img src="https://goods4.juancdn.com/bao/170724/7/f/59757b67a9fcf85d3e1a1056_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt="美迪惠尔针剂补水套装"/>
                                     </a>
@@ -70,31 +88,7 @@
                                         </div>
                                         <div class="good-name">美迪惠尔针剂补水套装</div>
                                     </a>
-                                </div>
-                                <div class="yinliu-good">
-                                    <a href="#" class="good-pic">
-                                        <img src="https://goods4.juancdn.com/bao/170724/7/f/59757b67a9fcf85d3e1a1056_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt="美迪惠尔针剂补水套装"/>
-                                    </a>
-                                    <a href="#" class="good-detail">
-                                        <div class="good-price">
-                                            <span class="price-new">￥198</span>
-                                            <span class="price-del">￥560</span>
-                                        </div>
-                                        <div class="good-name">美迪惠尔针剂补水套装</div>
-                                    </a>
-                                </div>
-                                <div class="yinliu-good">
-                                    <a href="#" class="good-pic">
-                                        <img src="https://goods4.juancdn.com/bao/170724/7/f/59757b67a9fcf85d3e1a1056_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt="美迪惠尔针剂补水套装"/>
-                                    </a>
-                                    <a href="#" class="good-detail">
-                                        <div class="good-price">
-                                            <span class="price-new">￥198</span>
-                                            <span class="price-del">￥560</span>
-                                        </div>
-                                        <div class="good-name">美迪惠尔针剂补水套装</div>
-                                    </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </li>
@@ -110,22 +104,45 @@ export default {
   data () {
     return {
         msg:'vip专享',
-        dataList:[]
+        dataList:[],
+        num:4
     }
   },
   methods:{
-    getDate:function(){
+       getDate2:function(num){
         var _this = this;
-        this.$http.jsonp("https://shop.juanpi.com/gsort?key=310&type=6&zhouyi_ids=p8_c4_l1_51_1064_18_5_128&machining=showshopgoods&page=1&rows=10&callback=gsort_callback", {}).then(function(res){
-            var data=res.body.list;
-            console.log(res.body.list);
-            _this.dataList.push( data);
+        this.$http.jsonp("https://shop.juanpi.com/gsort", {
+            params: {
+                key: 310,
+                type: 6,
+                zhouyi_ids: "p8_c4_l1_51_1064_18_5_128",
+                machining: "showshopgoods",
+                rows: 10,
+                page:　"All",
+                callback: "gsort_callback"
+            }
+        }).then(function(res){
+            // console.log(res.data.list);
+            var data2=res.data.list;
+           _this.dataList.push(data2);
+            // console.log(  _this.dataList);
 
         });
-    }
+    },
+    // getDate1:function(){
+    //     var _this = this;
+    //     this.$http.jsonp("https://shop.juanpi.com/gsort?key=310&type=6&zhouyi_ids=p8_c4_l1_51_1064_18_5_128&machining=showshopgoods&page=1&rows=10&callback=gsort_callback", {}).then(function(res){
+    //         console.log(res.body.list);
+    //        _this.dataList.push( res.body.list);
+
+    //     });
+    // },
+    
   },
    created(){
-      this.getDate();
+        this.getDate2();
+    //   this.getDate1();
+      
   }
 }
 </script>
@@ -133,6 +150,7 @@ export default {
 <style lang="css" scoped>
 #vip{
     width: 100%;
+    margin-bottom: .5rem;
 }
 a{
     color: #666;

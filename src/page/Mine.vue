@@ -4,7 +4,7 @@
       <div class="userCenter">
         <div id="head">
           <div class="userTop">
-            <a href="#" class="t-goback">
+            <a href="javascript:history.go(-1)" class="t-goback" >
               <span class="icon"></span>
             </a>
             <span class="text">个人中心</span>
@@ -286,7 +286,7 @@ export default {
          }
           #footer  .line{
             width:90%;
-            border-bottom: 1px solid #ebebeb;
+            border-bottom: 0.005rem solid #ebebeb;
             font-size:0;
             height: 1px;
             text-align:center;

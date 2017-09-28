@@ -1,29 +1,33 @@
 <template>
   <div id="app">
-
-     <div>
-         <ul class="tabbar">
+     <div v-show="isShow">
+         <ul class="tabbar" >
           <li><router-link to='/day'>今日推荐</router-link></li>
           <li><router-link to='/roll'>卷皮精选</router-link></li>
           <li><router-link to='/vip'>vip专享</router-link></li>
           <li><router-link to='/car'>购物车</router-link></li>
           <li><router-link to='/mine'>我的</router-link></li>
       </ul>
-       <router-view></router-view>
-
-
+       <router-view ></router-view>
      </div>
-    
   </div>
 </template>
 
 <script>
 
 export default {
- 
+  methods:{
+    isShow(){
+      return this.$route.path.indexOf('/classifi') == -1 ? true : false;
+      // console.log(this.$route.path);
+    }
+  },
+  created(){
+    console.log(this.$route);
   }
+  }
+ 
    
-
 </script>
 
 <style scoped>
