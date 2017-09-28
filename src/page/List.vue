@@ -32,7 +32,7 @@
         </div>
         <ul id="main">
             <li>
-                <a href="#">
+                <router-link to='/good'>
                     <div class="main1">
                         <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
                     </div>
@@ -42,10 +42,10 @@
                         <span>上新</span>
                         <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
                     </div>
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="#">
+                <router-link to='/good'>
                     <div class="main1">
                         <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
                     </div>
@@ -55,10 +55,10 @@
                         <span>上新</span>
                         <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
                     </div>
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="#">
+                <router-link to='/good'>
                     <div class="main1">
                         <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
                     </div>
@@ -68,10 +68,10 @@
                         <span>上新</span>
                         <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
                     </div>
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="#">
+                <router-link to='/good'>
                     <div class="main1">
                         <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
                     </div>
@@ -81,7 +81,7 @@
                         <span>上新</span>
                         <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
                     </div>
-                </a>
+                </router-link>
             </li>
             <div class="clear"></div>
         </ul>
@@ -239,5 +239,9 @@ export default {
         height: 0;
         clear: both;
         visibility: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px;
+    height: 1px;
     }
 </style>

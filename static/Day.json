@@ -1,0 +1,304 @@
+{
+    "module_ads": {
+        "block_id": "249",
+        "multi_block": [
+            {
+                "show_type": 1,
+                "block_type": 15,
+                "split_line": "0",
+                "split_color": "",
+                "margin_enabled": 10,
+                "data": [
+                    {
+                        "width": 1,
+                        "triangle": 0,
+                        "height": 0.2472,
+                        "child": [
+                            {
+                                "pic": "https://goods8.juancdn.com/jas/170828/e/7/59a3f55e8150a1637e478d48_270x267.png?imageMogr2/quality/85!/format/png",
+                                "url": "http://web.juanpi.com/freepost?mjuanpi_wx=1",
+                                "layout": "col",
+                                "width": 0.25,
+                                "height": 1,
+                                "countdown": {
+                                    "enable_time": null,
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": null,
+                                    "end_text": null
+                                },
+                                "bd_id": "12837",
+                                "new_product": "",
+                                "x_record": "1_1",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4326::img_id::12837::1_1\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods8.juancdn.com/jas/170809/e/8/598a7504a9fcf866ab51bcfe_270x267.png?imageMogr2/quality/85!/format/png",
+                                "url": "https://tuan.juanpi.com/Oldbringnew?mjuanpi_wx=1",
+                                "layout": "col",
+                                "width": 0.25,
+                                "height": 1,
+                                "countdown": {
+                                    "enable_time": null,
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": null,
+                                    "end_text": null
+                                },
+                                "bd_id": "12838",
+                                "new_product": "",
+                                "x_record": "1_2",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4326::img_id::12838::1_2\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods4.juancdn.com/jas/170828/7/1/59a3f5768150a16da3399c8f_270x267.png?imageMogr2/quality/85!/format/png",
+                                "url": "https://web.juanpi.com/pinfruit?mjuanpi_wx=1",
+                                "layout": "col",
+                                "width": 0.25,
+                                "height": 1,
+                                "countdown": {
+                                    "enable_time": null,
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": null,
+                                    "end_text": null
+                                },
+                                "bd_id": "12839",
+                                "new_product": "",
+                                "x_record": "1_3",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4326::img_id::12839::1_3\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods1.juancdn.com/jas/170906/1/c/59af976b8150a15198156939_270x267.png?iopcmd=convert&Q=85&dst=png",
+                                "url": "https://tuan.juanpi.com/pintuan?mjuanpi_wx=1",
+                                "layout": "col",
+                                "width": 0.25,
+                                "height": 1,
+                                "countdown": {
+                                    "enable_time": null,
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": null,
+                                    "end_text": null
+                                },
+                                "bd_id": "12840",
+                                "new_product": "",
+                                "x_record": "1_4",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4326::img_id::12840::1_4\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "show_type": 1,
+                "block_type": 4,
+                "split_line": "1",
+                "split_color": "",
+                "margin_enabled": 10,
+                "data": [
+                    {
+                        "width": 1,
+                        "triangle": 0,
+                        "height": 0.6074,
+                        "child": [
+                            {
+                                "pic": "https://goods1.juancdn.com/jas/170926/0/a/59c9b74fa9fcf818303c1141_540x656.png?iopcmd=convert&Q=85&dst=png",
+                                "url": "https://m.juanpi.com/act/timebuy_new?mjuanpi_wx=1",
+                                "layout": "col",
+                                "width": 0.5,
+                                "height": 1,
+                                "countdown": {
+                                    "enable_time": "1",
+                                    "start_time": 1506477600,
+                                    "end_time": 1506491999,
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "12869",
+                                "new_product": "",
+                                "x_record": "2_1",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4333::img_id::12869::2_1\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods4.juancdn.com/jas/170927/7/3/59caff94a9fcf838f6616a1f_540x328.png?imageMogr2/quality/85!/format/png",
+                                "url": "https://m.juanpi.com/act/newpro?mjuanpi_wx=1",
+                                "layout": "row",
+                                "width": 0.5,
+                                "height": 0.5,
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "12870",
+                                "new_product": "",
+                                "similar": 2,
+                                "x_record": "2_2",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4333::img_id::12870::2_2\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods8.juancdn.com/jas/170925/f/6/59c86dd98150a141f25458d1_540x328.png?imageMogr2/quality/85!/format/png",
+                                "url": "https://web.juanpi.com/brands/clearance?mjuanpi_wx=1",
+                                "layout": "row",
+                                "width": 0.5,
+                                "height": 0.5,
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "12871",
+                                "new_product": "",
+                                "similar": 2,
+                                "x_record": "2_3",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4333::img_id::12871::2_3\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "show_type": 1,
+                "block_type": 1,
+                "split_line": "0",
+                "split_color": "",
+                "margin_enabled": 10,
+                "data": [
+                    {
+                        "width": 1,
+                        "triangle": 0,
+                        "height": 0.2407,
+                        "child": [
+                            {
+                                "pic": "https://goods5.juancdn.com/jas/170925/8/0/59c8e9f9a9fcf86e280a489f_1080x260.png?iopcmd=convert&Q=85&dst=png",
+                                "url": "https://mact.juanpi.com/cjcd?mjuanpi_wx=1",
+                                "layout": "col",
+                                "width": 1,
+                                "height": 1,
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "13630",
+                                "new_product": "",
+                                "x_record": "3_1",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::4594::img_id::13630::3_1\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "show_type": 1,
+                "block_type": 1,
+                "split_line": "0",
+                "split_color": "",
+                "margin_enabled": 10,
+                "data": [
+                    {
+                        "width": 1,
+                        "triangle": 0,
+                        "height": 0.128,
+                        "child": [
+                            {
+                                "pic": "https://goods1.juancdn.com/bao/170310/0/f/58c20db7a43d1f63427015d8_750x96.jpg?iopcmd=convert&Q=85&dst=jpg",
+                                "url": "",
+                                "layout": "col",
+                                "width": 1,
+                                "height": 1,
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "743",
+                                "new_product": "",
+                                "x_record": "4_1",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::249::block_id::697::img_id::743::4_1\",\"cid\":null,\"_t\":1506480856,\"_z\":\"5\",\"ab_info\":null}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "block_background_color": "",
+        "block_background_image": ""
+    },
+    "banner_ads": [
+        {
+            "pic": "https://goods8.juancdn.com/jas/170925/e/6/59c8e8278150a1722566e454_1080x418.png?imageMogr2/thumbnail/750x290!/quality/80!/format/png",
+            "url": "https://mact.juanpi.com/cjcd?mjuanpi_wx=1",
+            "id": "15364",
+            "size": "750*290",
+            "title": "927长假出行穿搭",
+            "server_jsonstr": "{\"pit_info\":\"banner::15364::1_1\",\"cid\":\"\",\"_t\":1506480856}",
+            "x_record": "1_1",
+            "activityname": "click_ad_banner"
+        },
+        {
+            "pic": "https://goods6.juancdn.com/jas/170927/a/e/59caf2158150a148bd579d56_1080x418.jpg?imageMogr2/thumbnail/750x290!/quality/80!/format/jpg",
+            "url": "https://mact.juanpi.com/yierkangqsx?mjuanpi_wx=1",
+            "id": "15372",
+            "size": "750*290",
+            "title": "鞋子-意尔康",
+            "server_jsonstr": "{\"pit_info\":\"banner::15372::1_2\",\"cid\":\"\",\"_t\":1506480856}",
+            "x_record": "1_2",
+            "activityname": "click_ad_banner"
+        },
+        {
+            "pic": "https://goods4.juancdn.com/jas/170927/6/2/59caf2388150a14a4208a4d6_1080x418.jpg?imageMogr2/thumbnail/750x290!/quality/80!/format/jpg",
+            "url": "https://m.juanpi.com/brand/3664054?shop_id=3664054",
+            "id": "15373",
+            "size": "750*290",
+            "title": "男装-KM",
+            "server_jsonstr": "{\"pit_info\":\"banner::15373::1_3\",\"cid\":\"\",\"_t\":1506480856}",
+            "x_record": "1_3",
+            "activityname": "click_ad_banner"
+        },
+        {
+            "pic": "https://goods4.juancdn.com/jas/170920/7/1/59c1c0baa9fcf83c4773cd61_1080x418.png?imageMogr2/thumbnail/750x290!/quality/80!/format/png",
+            "url": "https://mact.juanpi.com/jcyp?mjuanpi_wx=1",
+            "id": "15331",
+            "size": "750*290",
+            "title": "美食-卷品荆楚优品扶植",
+            "server_jsonstr": "{\"pit_info\":\"banner::15331::1_4\",\"cid\":\"\",\"_t\":1506480856}",
+            "x_record": "1_4",
+            "activityname": "click_ad_banner"
+        },
+        {
+            "pic": "https://goods8.juancdn.com/jas/170916/e/e/59bc72438150a1376c528f2e_1080x418.jpg?imageMogr2/thumbnail/750x290!/quality/80!/format/jpg",
+            "url": "https://m.juanpi.com/survey/mobile/1990494?mjuanpi_wx=1",
+            "id": "15213",
+            "size": "750*290",
+            "title": "用户画像问卷0923",
+            "server_jsonstr": "{\"pit_info\":\"banner::15213::1_5\",\"cid\":\"\",\"_t\":1506480856}",
+            "x_record": "1_5",
+            "activityname": "click_ad_banner"
+        }
+    ],
+    "topbanner": {
+        "pic": "",
+        "pic_url": "https://jp.juancdn.com/jpwebapp/images/go_load_new.png",
+        "url": "//m.juanpi.com/landing/app_1437990734"
+    },
+    "popup_ads": []
+}

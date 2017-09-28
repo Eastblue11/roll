@@ -2,7 +2,7 @@
     <div id="day">
         <header>
             <div class="app">
-                <a href="#"><img src="https://jp.juancdn.com/jpwebapp/images/go_load_new.png?20161115"></a>
+                <a href="#"><img src="//jp.juancdn.com/jpwebapp/images/go_load_new.png"></a>
             </div>
             <div class="search">
                 <div class="bar">
@@ -11,7 +11,7 @@
             </div>
         </header>
         <div class="nav">
-            <router-link to="/list">上新</router-link>
+            <router-link to="/day">上新</router-link>
             <router-link to="/list">女装</router-link>
             <router-link to="/list">鞋包</router-link>
             <router-link to="/list">母婴</router-link>
@@ -24,10 +24,8 @@
             <router-view></router-view>
         </div>
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#"><img src="https://goods8.juancdn.com/jas/170924/f/4/59c721b1a9fcf86c6f65ad6a_1080x418.png?imageMogr2/thumbnail/750x290!/quality/80!/format/png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="https://goods4.juancdn.com/jas/170920/7/1/59c1c0baa9fcf83c4773cd61_1080x418.png?imageMogr2/thumbnail/750x290!/quality/80!/format/png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="https://goods4.juancdn.com/jas/170924/7/a/59c723428150a1259424d576_1080x418.jpg?imageMogr2/thumbnail/750x290!/quality/80!/format/jpg"></a></div>
+            <div class="swiper-wrapper" >
+                <div class="swiper-slide" v-for='(item,index) in list.banner_ads' :key="item.id"><a href="#"><img :src="item.pic"></a></div>
             </div>
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination" style="font-size:0;"></div>
@@ -37,7 +35,7 @@
             <li><a href="#"><img src="https://goods8.juancdn.com/jas/170828/e/7/59a3f55e8150a1637e478d48_270x267.png?imageMogr2/quality/85!/format/png"></a></li>
             <li><a href="#"><img src="https://goods8.juancdn.com/jas/170809/e/8/598a7504a9fcf866ab51bcfe_270x267.png?imageMogr2/quality/85!/format/png"></a></li>
             <li><a href="#"><img src="https://goods4.juancdn.com/jas/170828/7/1/59a3f5768150a16da3399c8f_270x267.png?imageMogr2/quality/85!/format/png"></a></li>
-            <li><a href="#"><img src="https://goods1.juancdn.com/jas/170906/1/c/59af976b8150a15198156939_270x267.png?iopcmd=convert&Q=85&dst=webp"></a></li>
+            <li><a href="#"><img src="https://goods1.juancdn.com/jas/170906/1/c/59af976b8150a15198156939_270x267.png?iopcmd=convert&Q=85&dst=webp"></a></li>                                    
         </ul>
         <div class="greyline"></div>
         <div id="hot">
@@ -57,55 +55,16 @@
             <img src="https://goods1.juancdn.com/bao/170310/0/f/58c20db7a43d1f63427015d8_750x96.jpg?iopcmd=convert&Q=85&dst=webp">
         </div>
         <ul id="main">
-            <li>
+            <li v-for='item in list1.list' :key='item.id'>
                 <a href="#">
                     <div class="main1">
-                        <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
+                        <img :src="item.pic_url">
                     </div>
                     <div class="main2">
-                        <h1>买两件减6元</h1>
-                        <h2>娇娇服饰专场</h2>
-                        <span>上新</span>
-                        <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="main1">
-                        <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
-                    </div>
-                    <div class="main2">
-                        <h1>买两件减6元</h1>
-                        <h2>娇娇服饰专场</h2>
-                        <span>上新</span>
-                        <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="main1">
-                        <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
-                    </div>
-                    <div class="main2">
-                        <h1>买两件减6元</h1>
-                        <h2>娇娇服饰专场</h2>
-                        <span>上新</span>
-                        <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="main1">
-                        <img src="https://goods5.juancdn.com/goods/170921/8/2/59c32f188150a17654184628_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=webp">
-                    </div>
-                    <div class="main2">
-                        <h1>买两件减6元</h1>
-                        <h2>娇娇服饰专场</h2>
-                        <span>上新</span>
-                        <img src="https://goods3.juancdn.com/seller/170831/5/0/59a78474a9fcf87e4e47f9c5_180x90.png?iopcmd=convert&Q=88&dst=webp">
+                        <h1>1</h1>
+                        <h2>{{item.title}}</h2>
+                        <span>{{item.residue}}</span>
+                        <img :src="item.shop_logo">
                     </div>
                 </a>
             </li>
@@ -120,9 +79,36 @@ export default {
   name: "component_name",
   data () {
     return {
-       
+       url:'./static/Day.json',
+       url1:'../../static/Day1.json',
+       list:[],
+       list1:[]
     }
-  }
+  },
+    created() {
+        this.axios.get(this.url).then(res => {
+            console.log(res.data);
+            this.list = res.data;
+        }, err => {
+            console.log(err);
+        });
+        this.axios.get(this.url1).then(res => {
+            console.log(res.data);
+            this.list1 = res.data;
+        }, err => {
+            console.log(err);
+        });
+    },
+    mounted(){
+            var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 2000,//可选选项，自动滑动
+            loop : true,
+            //手动操作后，自动继续播放
+            autoplayDisableOnInteraction : false,
+            //分页器
+            pagination : '.swiper-pagination'
+            });
+    }
 }
 </script>
     
@@ -178,6 +164,8 @@ export default {
         left: 0.08rem;
         content: "\e62b";
         font-size: 0.15rem;
+        background-image: url(https://jp.juancdn.com/jpwebapp_v1/images_v1/icon/search.png?ts=390cfa98cd666aa7_1506504699-1&sv=a8351a1e);
+        background-size: 0.15rem 0.15rem;
     }
     .nav{
         width: 100%;
@@ -186,6 +174,7 @@ export default {
         white-space: nowrap;
         overflow: auto;
         overflow-y: hidden;
+        border-top: 1px solid #f7f7f8;
     }
     .nav a{
         display: inline-block;
@@ -353,6 +342,7 @@ export default {
         position: absolute;
         right: 0.08rem;
         top:-0.125rem;
+        background-color: white;
     }
     .clear{
         content: "";
@@ -364,5 +354,5 @@ export default {
     ::-webkit-scrollbar {
     width: 0px;
     height: 1px;
-}
+    }
 </style>
