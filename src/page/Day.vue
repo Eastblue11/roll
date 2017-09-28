@@ -30,6 +30,28 @@
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination" style="font-size:0;"></div>
         </div>
+        <swiper :options="swiperOption" class="swiper-box">
+                <swiper-slide class="swiper-item">
+                     <a href="#">
+                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
+                    </a>
+                </swiper-slide>
+                <swiper-slide class="swiper-item">
+                     <a href="#">
+                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
+                    </a>
+                </swiper-slide>
+                <swiper-slide class="swiper-item">
+                     <a href="#">
+                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
+                    </a>
+                </swiper-slide>
+                <swiper-slide class="swiper-item">
+                     <a href="#">
+                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
+                    </a>
+                </swiper-slide>
+            </swiper>
         <div class="greyline"></div>
         <ul id="nav">
             <li><a href="#"><img src="https://goods8.juancdn.com/jas/170828/e/7/59a3f55e8150a1637e478d48_270x267.png?imageMogr2/quality/85!/format/png"></a></li>
@@ -82,7 +104,14 @@ export default {
        url:'./static/Day.json',
        url1:'../../static/Day1.json',
        list:[],
-       list1:[]
+       list1:[],
+       swiperOption: {
+            slidesPerView: 1,
+            // paginationClickable: true,
+            spaceBetween: 10,
+            // mousewheelControl: true
+            
+        }
     }
   },
     created() {

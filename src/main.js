@@ -5,6 +5,9 @@ import App from './App'
 
 //导入路由配置模块
 import router from './router'
+import "../node_modules/vue-awesome-swiper/node_modules/swiper/dist/css/swiper.min.css"
+import vueAwesomeSwiper from "vue-awesome-swiper"
+Vue.use(vueAwesomeSwiper);
 
 //引入http请求函数
 import vueResource from 'vue-resource'
