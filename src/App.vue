@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style scoped>
+
 *{
   padding: 0;
   margin: 0
@@ -64,7 +65,7 @@ export default {
 }
 a{
   text-decoration: none;
-  color: #333;
+  color: #666;
 }
 
 </style>

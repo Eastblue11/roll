@@ -23,7 +23,7 @@ module.exports = {
     },
     dev: {
         env: require('./dev.env'),
-        port: 8860,
+        port: 8870,
         autoOpenBrowser: true,
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
@@ -32,6 +32,10 @@ module.exports = {
                 //     target:'https://shop.juanpi.com/gsort?key=310&type=6&zhouyi_ids=p8_c4_l1_51_1064_18_5_128&machining=showshopgoods&page=1&rows=10&callback=gsort_callback',
                 //     changeOrigin:true
                 // }
+            // '/good':{
+            //     target:'https://jas.juanpi.com/pagetag/page?unique=module_ads%2Cbanner_ads%2Ctopbanner%2Cpopup_ads&cat_name=newest_zhe&zy_id=c4_l1_128_18_51_5_1064&platform=m&_=1506425862592&callback=jsonp1',
+            //     changeOrigin:true
+            // }
         },
         // CSS Sourcemaps off by default because relative paths are "buggy"
         // with this option, according to the CSS-Loader README

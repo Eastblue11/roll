@@ -106,9 +106,9 @@ border:0;
 .fixtop span{
     display: block;
 }
-.btnback{
+.fixtop .btnback{
       font-size: .14rem;
-      padding: 10px;
+      padding: .1rem;
       height:.25rem;
       width: .25rem;
       position: absolute;

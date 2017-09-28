@@ -2,10 +2,10 @@
     <div id="clapa">
       <div class="wrap">
             <div class="third-cate">
-              <div class="cate-second" v-for="(pro,idx) in classDateList" :key="pro.id">
-                <a href="#" class="daqta-bc" v-for="(val,index) in product.secondCate" :key="val.id">
+              <div class="cate-second" v-for="(pro,idx) in product" :key="pro.id">
+                <a href="#" class="daqta-bc">
                   <img src="https://s2.juancdn.com/bao/170824/8/d/599e9f6ba9fcf8902a706e88_200x200.png?iopcmd=convert&dst=webp" class="cate-img"/>
-                  <span>{{val.name}}</span>
+                  <span>{{pro.name}}</span>
                 </a>
               </div>
             </div>

@@ -5,9 +5,9 @@ import vueRouter from 'vue-router'
 // 安装全局路由
 Vue.use(vueRouter)
 
-//卷皮精选两个路由
-import shop from '../page/rollShop'
-import life from '../page/rollLife'
+// //卷皮精选两个路由
+// import shop from '../page/rollShop'
+// import life from '../page/rollLife'
 
 //引入四个主页
 import Day from '../page/Day';
@@ -28,6 +28,8 @@ import NotFound from '../page/notfound'
 
 //导入分类组件
 import Clapa from '../page/Clapa'
+import List from '../page/List'
+import Good from '../page/Good'
 
 //配置路由
 var routes = [{
@@ -40,12 +42,12 @@ var routes = [{
     },
     {
         path: '/roll',
-        component: Roll,
-        children: [
-            { path: '', component: shop },
-            { path: '/shop', component: shop },
-            { path: '/life', component: life }
-        ]
+        component: Roll
+        // children: [
+        //     { path: '', component: shop },
+        //     { path: '/shop', component: shop },
+        //     { path: '/life', component: life }
+        // ]
     },
     {
         path: '/vip',
@@ -66,6 +68,14 @@ var routes = [{
     {
         path: '/sigin',
         component: sigin,
+    },
+    {
+        path: '/list',
+        component: List
+    },
+    {
+        path: '/good',
+        component: Good
     },
     {
         path: '/classifi',

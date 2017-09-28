@@ -9,6 +9,9 @@
             <span id="t-user">编辑</span>
           </div>
         </div>
+        <div class="ajaxHtml">
+          <div class="my-bag" id=""goodList></div>
+        </div>
       </div>
     </div>
    </div>
