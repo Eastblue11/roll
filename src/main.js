@@ -14,6 +14,9 @@ import vueResource from 'vue-resource'
 Vue.use(vueResource)
 
 
+//导入vuex模块
+import store from './store/store'
+
 import axios from 'axios'
 // Vue.prototype.userName = '小黑'
 // 因为axios不是vue的模块，所以不能使用Vue.use()来进行注册，我们使用原型链的机制来注册
@@ -28,5 +31,6 @@ new Vue({
     el: '#app',
     template: '<App/>',
     components: { App },
-    router
+    router,
+    store
 })

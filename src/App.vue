@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-     <div v-show="isShow">
+     <div >
          <ul class="tabbar" >
           <li><router-link to='/day'>今日推荐</router-link></li>
           <li><router-link to='/roll'>卷皮精选</router-link></li>
@@ -10,6 +10,7 @@
       </ul>
        <router-view ></router-view>
      </div>
+     
   </div>
 </template>
 
@@ -18,7 +19,7 @@
 export default {
   methods:{
     isShow(){
-      return this.$route.path.indexOf('/classifi') == -1 ? true : false;
+      return this.$route.path.indexOf('/classifi') == -1 ? true : false ;
       // console.log(this.$route.path);
     }
   },

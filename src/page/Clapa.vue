@@ -2,9 +2,9 @@
     <div id="clapa">
       <div class="wrap">
             <div class="third-cate">
-              <div class="cate-second" v-for="(pro,idx) in product" :key="pro.id">
+              <div class="cate-second" v-for="(pro,idx) in prdetail.secondCateList" :key="pro.id">
                 <a href="#" class="daqta-bc">
-                  <img src="https://s2.juancdn.com/bao/170824/8/d/599e9f6ba9fcf8902a706e88_200x200.png?iopcmd=convert&dst=webp" class="cate-img"/>
+                  <img v-bind:src="'https://s2.juancdn.com'+item.icon" class="cate-img"/>
                   <span>{{pro.name}}</span>
                 </a>
               </div>
@@ -44,7 +44,10 @@ export default {
         return item;
       }
     }
-  }
+  },
+   prdetail(){
+      return this.$store.state.activePro;
+    }
  }
 }
 </script>
@@ -53,6 +56,10 @@ export default {
 #clapa{
   width: 100%;
    height: 5.6825rem;
+  font-size:.12rem;
+  float: left;
+  width:71%;
+  padding-left: 4%;
 }
 #wrap{
   height: 100%;

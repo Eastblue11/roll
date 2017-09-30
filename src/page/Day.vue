@@ -23,33 +23,9 @@
             <router-link to="/list">精品配饰</router-link>
             <router-view></router-view>
         </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper" >
-                <div class="swiper-slide" v-for='(item,index) in list.banner_ads' :key="item.id"><a href="#"><img :src="item.pic"></a></div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination" style="font-size:0;"></div>
-        </div>
-        <swiper :options="swiperOption" class="swiper-box">
-                <swiper-slide class="swiper-item">
-                     <a href="#">
-                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
-                    </a>
-                </swiper-slide>
-                <swiper-slide class="swiper-item">
-                     <a href="#">
-                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
-                    </a>
-                </swiper-slide>
-                <swiper-slide class="swiper-item">
-                     <a href="#">
-                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
-                    </a>
-                </swiper-slide>
-                <swiper-slide class="swiper-item">
-                     <a href="#">
-                        <img src="https://bfs.biyao.com/group1/M00/1D/1B/rBACYVnE6IWAPgEsAAErdvmGtDw843.jpg" class="module2-pic">
-                    </a>
+        <swiper :options="swiperOption" class="swiper-box" style="height:1.45rem" >
+                <swiper-slide class="swiper-item" v-for='(item,index) in list.banner_ads' :key="item.id">
+                        <img :src="item.pic" class="module2-pic">
                 </swiper-slide>
             </swiper>
         <div class="greyline"></div>
@@ -110,6 +86,8 @@ export default {
             // paginationClickable: true,
             spaceBetween: 10,
             // mousewheelControl: true
+            loop:true,
+            autoplay:2000
             
         }
     }

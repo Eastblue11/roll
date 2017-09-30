@@ -59,6 +59,9 @@ export default {
 </script>
     
 <style lang="css" scoped>
+    *{
+        box-sizing: border-box;
+    }
     footer{
         width: 100%;
         height: 0.48rem;

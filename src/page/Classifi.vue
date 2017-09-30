@@ -24,31 +24,29 @@
         <!-- 左边栏 -->
         <div class="list-left">
           <ul class="list-title">
-            <li class="bc " v-for="(item,index) in classDateList" :key="item.id" @click="showPro(index, item.name)" :class="{'color-red': colorShow==index}">
-              <router-link :to="'/classifi/clapa'+item.id">{{ item.name}}</router-link>
+            <li class="bc " v-for="(item,index) in proList" :key="item.id" @click="showPro(item, index)" :class="{'color-red': colorShow==index}">
+             {{ item.name}}
               </li>
           </ul>
         </div>
         <!-- 右边栏 -->
-        <div class="list-right">
-          <router-view></router-view>
-          <!-- <clapa></clapa> -->
-          <!-- <div class="wrap">
+        <div class="list-right"> 
+           <div class="wrap">
             <div class="third-cate">
-              <div class="cate-second">
+              <div class="cate-second" v-for="(pro,idx) in prdetail.secondCateList" :key="pro.id">
                 <a href="#" class="daqta-bc">
-                  <img src="https://s2.juancdn.com/bao/170824/8/d/599e9f6ba9fcf8902a706e88_200x200.png?iopcmd=convert&dst=webp" class="cate-img"/>
-                  <span>秋装</span>
+                  <img v-bind:src="'https://s2.juancdn.com'+pro.icon" class="cate-img"/>
+                  <span>{{pro.name}}</span>
                 </a>
               </div>
             </div>
-            </div> -->
+            </div>
             </div>
             </div>
         </div>
    </div>
 </template>
-    
+
 <script>
 export default {
   name: "component_name",
@@ -58,32 +56,49 @@ export default {
         colorShow: 0
     };
   },
-  component:{
-    // clapa
+  components:{
   },
   methods:{
     getData:function(){
            var _this = this;
     this.$http.get("../static/classData.json", {}).then(function(res){
           // console.log(res.data);
-       _this. classDateList= res.data;
+      //  _this. classDateList= res.data;
+        _this.$store.state.proList = res.data;
+        // 激活值初始化
+        this.$store.state.activePro = res.data[0];
+        
 
      });
     },
-    showPro(index, name) {
+    showPro(item, index) {
+      // 激活某个li
+      this.$store.commit('ACTIVE_pro',item);
       this.colorShow=index;
     }
   },
   created(){
     this.getData();
+  },
+   computed:{
+    proList(){
+      return this.$store.state.proList;
+    },
+    prdetail(){
+      return this.$store.state.activePro;
+    }
   }
 }
 </script>
     
 <style lang="css" scoped>
-   #vip{
+  html{
+    background: #fff;
+  }
+   #classifi{
     width: 100%;
-    margin-bottom: .5rem;
+    background: #fff;
+    
 }
 a{
     color: #666;
@@ -140,7 +155,7 @@ border:0;
   font-size:.15rem;
   color:#333;
   text-align: center;
-  background-color: #fff;
+  background: #fff;
 }
 #search-box{
   margin:.1rem;
@@ -214,6 +229,9 @@ border:0;
   border-bottom: .005rem solid #ebebeb;
   cursor: pointer;
 }
+.list-left ul li:last-of-type{
+  border-bottom:0;
+}
 .list-left ul .color-red{
 color: #ff464e;
 border-left:.02rem solid #ff464e;
@@ -225,9 +243,10 @@ background-color:#fff;
   float: left;
   width:71%;
   padding-left: 4%;
+  overflow: hidden;
+   background: #fff;
 }
-/* #wrap{
-  height: 100%;
+#wrap{
   width: 100%;
   text-align: left;
   overflow: hidden;
@@ -235,7 +254,7 @@ background-color:#fff;
 .third-cate{
   margin-top:.1rem;
   display: flex;
-  flex-wrap: row;
+ flex-wrap: wrap;
   flex-direction: row;
 }
 .third-cate .cate-second{
@@ -255,5 +274,5 @@ background-color:#fff;
 .cate-second span{
   line-height: .2rem;
   color: #333;
-} */
+}
 </style>
