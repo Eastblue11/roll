@@ -4,7 +4,7 @@
 
       <Ttopbar></Ttopbar>
 
-
+<!-- <router-view></router-view> -->
 
 
 
@@ -15,11 +15,7 @@
 import Ttopbar from '../components/Ttopbar'
 export default {
   name: "component_name",
-  data () {
-    return {
-       
-    };
-  },
+
   components:{
     Ttopbar
   },

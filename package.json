@@ -12,8 +12,11 @@
   "dependencies": {
     "axios": "^0.16.2",
     "vue": "^2.4.2",
+    "vue-awesome-swiper": "^2.6.5",
     "vue-axios": "^2.0.2",
-    "vue-router": "^2.7.0"
+    "vue-router": "^2.7.0",
+    "vue-swiper": "^0.5.0",
+    "vuex": "^2.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

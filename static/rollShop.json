@@ -1,0 +1,204 @@
+{
+    "code": "1000",
+    "info": "",
+    "data": {
+        "slide_ads": [],
+        "top_ads": [],
+        "block": [{
+            "block_id": "396",
+            "multi_block": [{
+                    "show_type": "1",
+                    "block_type": "1",
+                    "split_line": "0",
+                    "margin_enabled": "0",
+                    "data": [{
+                        "width": "1",
+                        "triangle": "0",
+                        "height": "0.1333",
+                        "child": [{
+                            "pic": "https://goods2.juancdn.com/jas/170829/2/6/59a51122a9fcf87fea4afbe4_1080x144.png?imageMogr2/quality/85!/format/png",
+                            "url": "https://m.juanpi.com/keywords?item=is_preferred",
+                            "layout": "col",
+                            "width": "1",
+                            "height": "1",
+                            "countdown": {
+                                "enable_time": "0",
+                                "start_time": "",
+                                "end_time": "",
+                                "start_text": "",
+                                "end_text": ""
+                            },
+                            "bd_id": "12766",
+                            "x_record": "1_1",
+                            "activityname": "click_cube_block",
+                            "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4305::img_id::12766::1_1\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                        }]
+                    }]
+                },
+                {
+                    "show_type": "1",
+                    "block_type": "1",
+                    "split_line": "0",
+                    "margin_enabled": "0",
+                    "data": [{
+                        "width": "1",
+                        "triangle": "0",
+                        "height": "0.3704",
+                        "child": [{
+                            "pic": "https://goods5.juancdn.com/jas/170829/9/e/59a511f28150a17a085fcc8b_1080x400.png?iopcmd=convert&Q=85&dst=png",
+                            "url": "",
+                            "layout": "col",
+                            "width": "1",
+                            "height": "1",
+                            "countdown": {
+                                "enable_time": "0",
+                                "start_time": "",
+                                "end_time": "",
+                                "start_text": "",
+                                "end_text": ""
+                            },
+                            "bd_id": "11893",
+                            "x_record": "2_1",
+                            "activityname": "click_cube_block",
+                            "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4024::img_id::11893::2_1\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                        }]
+                    }]
+                },
+                {
+                    "show_type": "1",
+                    "block_type": "5",
+                    "split_line": "0",
+                    "margin_enabled": "0",
+                    "data": [{
+                        "width": "1",
+                        "triangle": "0",
+                        "height": "0.2991",
+                        "child": [{
+                                "pic": "https://goods7.juancdn.com/jas/170830/d/d/59a6575da9fcf841480ab490_360x323.jpg?iopcmd=convert&Q=85&dst=jpg",
+                                "url": "http://web.juanpi.com/youxuan/category?cid=1859&title=\u751f\u6d3b\u65e5\u7528&scene_key=yx_shry",
+                                "layout": "col",
+                                "width": "0.3333",
+                                "height": "1",
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "13510",
+                                "x_record": "3_1",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4562::img_id::13510::3_1\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods5.juancdn.com/jas/170905/8/f/59ae2072a9fcf87ca46e7436_360x323.jpg?iopcmd=convert&Q=85&dst=jpg",
+                                "url": "http://web.juanpi.com/youxuan/category?cid=1860&title=\u7f8e\u5986\u4e2a\u62a4&scene_key=yx_mzgh",
+                                "layout": "col",
+                                "width": "0.3333",
+                                "height": "1",
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "13511",
+                                "x_record": "3_2",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4562::img_id::13511::3_2\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods8.juancdn.com/jas/170905/f/f/59ae208ca9fcf87cdb4a6f8a_360x323.jpg?imageMogr2/quality/85!/format/jpg",
+                                "url": "http://web.juanpi.com/youxuan/category?cid=1855&title=\u9910\u53a8\u7528\u5177&scene_key=yx_ccyj",
+                                "layout": "col",
+                                "width": "0.3333",
+                                "height": "1",
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "13512",
+                                "x_record": "3_3",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4562::img_id::13512::3_3\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                            }
+                        ]
+                    }]
+                },
+                {
+                    "show_type": "1",
+                    "block_type": "5",
+                    "split_line": "0",
+                    "margin_enabled": "0",
+                    "data": [{
+                        "width": "1",
+                        "triangle": "0",
+                        "height": "0.2991",
+                        "child": [{
+                                "pic": "https://goods7.juancdn.com/jas/170830/c/3/59a6576ca9fcf841624c9283_360x323.jpg?iopcmd=convert&Q=85&dst=jpg",
+                                "url": "http://web.juanpi.com/youxuan/category?cid=1856&title=\u6e05\u6d01\u6536\u7eb3&scene_key=yx_qjsn",
+                                "layout": "col",
+                                "width": "0.3333",
+                                "height": "1",
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "13513",
+                                "x_record": "4_1",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4563::img_id::13513::4_1\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods3.juancdn.com/jas/170905/4/d/59ae20cfa9fcf87d6416b017_360x323.jpg?iopcmd=convert&Q=85&dst=jpg",
+                                "url": "http://web.juanpi.com/youxuan/category?cid=1858&title=\u670d\u9970\u5bb6\u7eba&scene_key=yx_fzjf",
+                                "layout": "col",
+                                "width": "0.3333",
+                                "height": "1",
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "13514",
+                                "x_record": "4_2",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4563::img_id::13514::4_2\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                            },
+                            {
+                                "pic": "https://goods5.juancdn.com/jas/170830/9/4/59a65d678150a11d52259e75_360x323.jpg?iopcmd=convert&Q=85&dst=jpg",
+                                "url": "http://web.juanpi.com/youxuan/category?cid=1857&title=\u914d\u9970\u7bb1\u5305&scene_key=yx_psxb",
+                                "layout": "col",
+                                "width": "0.3333",
+                                "height": "1",
+                                "countdown": {
+                                    "enable_time": "0",
+                                    "start_time": "",
+                                    "end_time": "",
+                                    "start_text": "",
+                                    "end_text": ""
+                                },
+                                "bd_id": "13515",
+                                "x_record": "4_3",
+                                "activityname": "click_cube_block",
+                                "server_jsonstr": "{\"pit_info\":\"ad_id::396::block_id::4563::img_id::13515::4_3\",\"cid\":\"\",\"_t\":1506514000,\"_z\":\"5\",\"ab_info\":null}"
+                            }
+                        ]
+                    }]
+                }
+            ],
+            "block_background_color": "",
+            "block_background_image": ""
+        }]
+    }
+}
