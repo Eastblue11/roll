@@ -1,7 +1,11 @@
 
 <template>
-    <div>
-     <div class="de_1"><span @click="back()"><</span>生活用品</div>
+<!-- <div id="ri"> -->
+    <div id="ad">
+        <div class="de_1">
+            <span @click="back()"><</span>
+            生活用品
+        </div>
 
     <div v-for='(item,index) in msg' :key="index" class="roll_5">
             <img :src='item.pic_url'/>
@@ -11,14 +15,20 @@
             </div>
             <div >{{item.title}}</div>
             <div >￥<span>{{item.cprice}}</span></div>
-            <div class="car_car" >加入购物车</div>
+
+            <div class="car_car" >
+                 <mt-button @click.native="openToast" size="large" id="c">
+                     加入购物车
+             </mt-button>
+               
+            </div>
     </div>
-
-
    </div>
+<!-- </div> -->
 </template>
     
 <script>
+import { Toast } from 'mint-ui';
 export default {
   name: "component_name",
   data () {
@@ -33,6 +43,12 @@ export default {
         //  }
   },
   methods:{
+       openToast() {
+        Toast({
+            message:'成功加入购物车',
+            duration:1000
+        })
+      },
       back(){
             // history.back()
             this.$router.go(-1)
@@ -56,19 +72,24 @@ export default {
 </script>
     
 <style lang="css" scoped>
+
     .de_1{
+        position: fixed;
+        top: 0;
+        z-index: 4;
         height: 0.4rem;
         background: #fff;
         font-size: 0.18rem;
         line-height: 0.4rem;
         text-align: left;
-        padding: 0 0.1rem
+        padding: 0 0.1rem;width: 100%
     }
     .de_1 span{
         margin-right: 1.3rem
     }
 
     .roll_5{
+        margin-top: 0.4rem;z-index: 3;
     font-size: 0.14rem;
     float: left;
     width: 50%;
@@ -106,12 +127,12 @@ export default {
     white-spacing:nowrap;
     /* height: 0.2rem; */
 }
-.car_car{
+.car_car,#c{
     font-size: 0.1rem;
     text-align: left;
     background: #e66b01;
     color: #fff;
-    width: 0.6rem;
+    width: 0.7rem;height: 0.2rem;
 }
 </style>
 

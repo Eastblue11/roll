@@ -75,10 +75,17 @@
             </div>
             <div >{{item.title}}</div>
             <div >￥<span>{{item.cprice}}</span></div>
-             <div class="car_car" > 加入购物车</div>
+            
+            
+                 <div class="car_car" >
+                     <mt-button @click.native="openToast" size="large" id="c">
+                         加入购物车
+                     </mt-button>
+              </div>
+             
     </div>
 
-
+<router-view></router-view>
 
 
 
@@ -93,7 +100,7 @@
 <script>
 // import swiper from '../components/swiper'
 // import { swiper, swiperSlide } from 'vue-awesome-swiper'
-
+import { Toast } from 'mint-ui';
 
 export default {
 
@@ -126,8 +133,11 @@ export default {
     },
 
   methods:{
-      car(){
-        //   console.log('car')
+    openToast() {
+        Toast({
+            message:'成功加入购物车',
+            duration:500
+        })
       },
         	//resource
         getData1:function(){
@@ -256,12 +266,12 @@ export default {
     white-spacing:nowrap;
     /* height: 0.2rem; */
 }
-.car_car{
+.car_car,#c{
     font-size: 0.1rem;
     text-align: left;
     background: #e66b01;
     color: #fff;
-    width: 0.6rem;
+    width: 0.6rem;height: 0.2rem;
 }
 
 

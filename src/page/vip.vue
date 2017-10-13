@@ -1,6 +1,8 @@
 <template>
     <div id="vip">
        <h1>{{msg}}</h1>
+
+        <router-link to='/joincar'>购物车</router-link>
    </div>
 </template>
     

@@ -40,7 +40,7 @@ export default {
   bottom: 0;
   height: 0.5rem;
   background-color: gray;
-  line-height: 0.5rem;
+  line-height: 0.5rem;z-index: 2;
 }
  ul li{
  

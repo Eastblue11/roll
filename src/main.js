@@ -6,7 +6,27 @@ import Vuex from 'vuex'
 
 
 Vue.use(Vuex)
-    //引入swiper
+    //创建实例
+    // const store = new store({
+    //     state: {
+
+//     },
+//     mutations: {
+//         store_car(state) {
+
+//         }
+//     },
+//     actions: {
+
+//     }
+// })
+
+
+
+
+
+
+//引入swiper
 import vueSwiper from 'vue-awesome-swiper'
 Vue.use(vueSwiper)
     // require('swiper/dist/css/swiper.css')
@@ -20,8 +40,14 @@ import "../node_modules/vue-awesome-swiper/node_modules/swiper/dist/css/swiper.m
 import VueResource from 'vue-resource'; //vue-resource使用$http.get
 Vue.use(VueResource) //使用VueResource插件
 
+//引入mint-ui
+import MintUi from 'mint-ui'
+import 'mint-ui/lib/style.css'
 
 
+import Toast from 'mint-ui/lib/Toast';
+Vue.use(MintUi)
+    // Vue.component(Toast.name, Toast);
 
 
 //卷皮精选两个路由
@@ -40,6 +66,7 @@ Vue.config.productionTip = false
 
 
 
+// children: [{ path: '/joincar', component: joincar }]
 //配置路由
 var routes = [{
         path: '',
@@ -60,7 +87,8 @@ var routes = [{
     },
     {
         path: '/vip',
-        component: Vip
+        component: Vip,
+
     },
     {
         path: '/car',
@@ -73,6 +101,10 @@ var routes = [{
     {
         path: '/detail/:x_record',
         component: Detail
+    },
+    {
+        path: '/mine',
+        component: Mine
     }
 ];
 
@@ -94,5 +126,6 @@ new Vue({
     el: '#app',
     template: '<App/>',
     components: { App },
-    router
+    router,
+    Toast,
 })
