@@ -15,14 +15,16 @@
             </div>
             <div >{{item.title}}</div>
             <div >￥<span>{{item.cprice}}</span></div>
-
-            <div class="car_car" >
+                <!-- //点击加入购物车 -->
+            <div class="car_car" @click="add(item)" >
                  <mt-button @click.native="openToast" size="large" id="c">
                      加入购物车
-             </mt-button>
+                     <!-- {{item}} -->
+                </mt-button>
                
             </div>
     </div>
+    
    </div>
 <!-- </div> -->
 </template>
@@ -58,7 +60,16 @@ export default {
                 this.msg=res.body.goodsInfo.goods
                 console.log(res.body)
             })
-      }
+      },
+    //   点击加入购物车的方法
+    add(item){
+        //同步
+        // this.$store.commit('ADD',item)
+        //异步
+        this.$store.dispatch('add',item)
+        console.log('成功加入购物车')
+        console.log(item.cprice)
+    }
        
   },
   created(){
@@ -134,6 +145,9 @@ export default {
     color: #fff;
     width: 0.7rem;height: 0.2rem;
 }
+/* #c{
+    height: 150px;width: 200px
+} */
 </style>
 
 

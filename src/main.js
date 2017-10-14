@@ -5,22 +5,8 @@ import App from './App'
 import Vuex from 'vuex'
 
 
-Vue.use(Vuex)
-    //创建实例
-    // const store = new store({
-    //     state: {
-
-//     },
-//     mutations: {
-//         store_car(state) {
-
-//         }
-//     },
-//     actions: {
-
-//     }
-// })
-
+//引入vuex
+import store from './store'
 
 
 
@@ -66,7 +52,7 @@ Vue.config.productionTip = false
 
 
 
-// children: [{ path: '/joincar', component: joincar }]
+
 //配置路由
 var routes = [{
         path: '',
@@ -128,4 +114,5 @@ new Vue({
     components: { App },
     router,
     Toast,
+    store
 })
